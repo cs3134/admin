@@ -52,7 +52,59 @@ Install Git by following the instructions here for your operating system: [https
 
 You should have finished creating an account on GitHub, registering with Jarvis, and installing Git.
 
-You should download
+You should download [https://github.com/cs3134/admin/blob/master/setup.sh](https://github.com/cs3134/admin/blob/master/setup.sh) and run the `.sh` file.
+
+#### Mac
+
+Simply drag the `setup.sh` to a folder where you want your homework files to be, open up Terminal, `cd` into the directory where the `setup.sh` is, and run
+
+```bash
+$ sh setup.sh <youruni>
+```
+
+For example, for me, I'd run
+
+```bash
+$ sh setup.sh lq2137
+```
+
+You should see a series of commands being run.
+
+```
+➜  admin git:(master) sh setup.sh lq2137
+Cloning into 'homework-master'...
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+Checking connectivity... done.
+Original remote -v setup
+origin  https://github.com/cs3134/homework-master.git (fetch)
+origin  https://github.com/cs3134/homework-master.git (push)
+Renamed remote -v setup
+upstream    https://github.com/cs3134/homework-master.git (fetch)
+upstream    https://github.com/cs3134/homework-master.git (push)
+Final remote -v setup
+origin  https://github.com/cs3134/homework-lq2137 (fetch)
+origin  https://github.com/cs3134/homework-lq2137 (push)
+upstream    https://github.com/cs3134/homework-master.git (fetch)
+upstream    https://github.com/cs3134/homework-master.git (push)
+On branch master
+Your branch is up-to-date with 'upstream/master'.
+nothing to commit, working directory clean
+Branch master set up to track remote branch master from origin.
+Everything up-to-date
+```
+
+#### Linux
+
+Do pretty much the same as the Mac people.
+
+#### Windows
+
+Unfortunately, you'd have to download Cygwin then run `setup.sh`. If you need help with that, contact a TA.
+
+#### Manual Installation (aka. Windows)
 
 1. Clone the current homework repository by issuing the following commands onto the command line in a directory where you want the homeworks to be:
 
