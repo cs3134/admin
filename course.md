@@ -46,9 +46,11 @@ You should now be apart of the CS3134 Organization and should have access to a f
 
 ### Install Git
 
-Install Git by following the instructions here for your operating system: [https://help.github.com/articles/set-up-git/](https://help.github.com/articles/set-up-git/). Make sure you authenticate using HTTPS from your own GitHub account (not your UNI or anything else).
+Install Git by following the instructions here for your operating system: [https://help.github.com/articles/set-up-git/](https://help.github.com/articles/set-up-git/).
 
-### Setting Up Git
+Then, set up your authentication keys here: [https://help.github.com/articles/caching-your-github-password-in-git/](https://help.github.com/articles/caching-your-github-password-in-git/).
+
+### Setting Up Homeworks
 
 You should have finished creating an account on GitHub, registering with Jarvis, and installing Git.
 
