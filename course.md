@@ -35,10 +35,10 @@ Now that you have a GitHub account, you need to add yourself to Jarvis so that J
 
 1. Go to the [Jarvis](http://jarvis.xyz/)
 2. Click on the **register** tab
-3. Enter your UNI. If it gives you an error saying that you're not enrolled for the class, contact the Head TA [Linan Qiu <lq2137@columbia.edu>](lq2137@columbia.edu).
+3. Enter your UNI. If it gives you an error saying that you're not enrolled for the class, contact the Head TA [Linan Qiu lq2137@columbia.edu](mailto:lq2137@columbia.edu).
 4. Choose whether you want to opt-in to the Scoreboard.
 5. Click on **GitHub Login**. This will bring you to GitHub where you will have to give permission to Jarvis.
-6. If for any reason this fails, email the Head TA [Linan Qiu <lq2137@columbia.edu>](lq2137@columbia.edu)
+6. If for any reason this fails, email the Head TA [Linan Qiu lq2137@columbia.edu](mailto:lq2137@columbia.edu)
 
 You should now be apart of the CS3134 Organization and should have access to a few different repositories:
 - You should now have a repository setup just for your homework solutions. This should be located in the CS3134 organization and be called `homework-<uni>`. This is what you'll setup in the next section to allow you to write your homework answers and submit them. If the above didn't work, contact one of the TAs to help you out.
