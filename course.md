@@ -123,6 +123,10 @@ In order to run setup.sh on a Windows machine, you need to install Cygwin. Cygwi
 
 First, install Cygwin from the Cygwin homepage: https://cygwin.com/install.html
 
+When running setup.exe, make sure to check off all the git packages at the appropriate step of the installation, as shown below:
+
+![1](https://raw.githubusercontent.com/cs3134/admin/master/course-screenshots/git-cygwin.png?raw=true)
+
 The default options of the installation are fine; the installation itself can take a pretty long time (mine took a few hours). It's totally worth it -- the installation repays itself many times over.
 
 Once it's installed, open it up and you should be at a command prompt. Now you just need to run the setup.sh script and you're good to go:
