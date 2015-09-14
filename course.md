@@ -278,7 +278,7 @@ upstream    https://github.com/cs3134/homework-master.git (push)
    the following:
 
 ```bash
-$ git push -u origin master
+$ git push -u -f origin master
 ```
 
    You should see something like the following:
