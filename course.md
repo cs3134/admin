@@ -50,6 +50,8 @@ Install Git by following the instructions here for your operating system: [https
 
 Then, set up your authentication keys here: [https://help.github.com/articles/caching-your-github-password-in-git/](https://help.github.com/articles/caching-your-github-password-in-git/).
 
+If you wan to learn more about Git, check out this very handy video here: [https://www.youtube.com/watch?v=0fKg7e37bQE](https://www.youtube.com/watch?v=0fKg7e37bQE)
+
 ### Setting Up Homeworks
 
 You should have finished creating an account on GitHub, registering with Jarvis, and installing Git.
@@ -58,7 +60,11 @@ You should download [https://github.com/cs3134/admin/blob/master/setup.sh](https
 
 #### Mac
 
-Simply drag the `setup.sh` to a folder where you want your homework files to be, open up Terminal, `cd` into the directory where the `setup.sh` is, and run
+You need to download the Admin zip from GitHub [https://github.com/cs3134/admin](https://github.com/cs3134/admin):
+
+That link points to the cs3134/admin repo on GitHub. To download it, click the link on the bottom right of the screen 'Download ZIP'.
+
+Unzip it, then drag the `setup.sh` to a folder where you want your homework files to be, open up Terminal, `cd` into the directory where the `setup.sh` is, and run
 
 ```bash
 $ sh setup.sh <youruni>
@@ -98,15 +104,73 @@ Branch master set up to track remote branch master from origin.
 Everything up-to-date
 ```
 
+If you want to use Eclipse, simply import the entire `0` directory as a project. The guide to using Eclipse is here: [https://github.com/cs3134/admin/blob/master/eclipse.md](https://github.com/cs3134/admin/blob/master/eclipse.md)
+
 #### Linux
 
 Do pretty much the same as the Mac people.
 
+If you use Eclipse, this guide will be useful for importing projects: [https://github.com/cs3134/admin/blob/master/eclipse.md](https://github.com/cs3134/admin/blob/master/eclipse.md)
+
 #### Windows
 
-Unfortunately, you'd have to download Cygwin then run `setup.sh`. If you need help with that, contact a TA.
+(Contributed by [Windows Guru Nick Mariconda nm2812@columbia.edu](mailto:nm2812@columbia.edu))
 
-#### Manual Installation (aka. Windows)
+In order to run setup.sh on a Windows machine, you need to install Cygwin. Cygwin (pronounced sig-win) is a Unix-like environment and command-line interface for Windows. It's a good idea for Windows users to be familiar with Cygwin.
+
+First, install Cygwin from the Cygwin homepage: https://cygwin.com/install.html
+
+The default options of the installation are fine; the installation itself can take a pretty long time (mine took a few hours). It's totally worth it -- the installation repays itself many times over.
+
+Once it's installed, open it up and you should be at a command prompt. Now you just need to run the setup.sh script and you're good to go:
+
+You need to download the Admin zip from GitHub [https://github.com/cs3134/admin](https://github.com/cs3134/admin):
+
+That link points to the cs3134/admin repo on GitHub. To download it, click the link on the bottom right of the screen 'Download ZIP'.
+
+A File Explorer window should pop up with an 'admin-master' folder. Enter the folder and you should find the 'setup' shell script. Copy it, and then paste it in the home/USERNAME directory of Cygwin. You should be able to find this directory in the Cygwin folder located in the C drive directory. My full directory path for it looks like this: C:\cygwin\home\nick
+
+Once it's pasted in that directory, open up Cygwin. Enter (without the `$` sign. The `$` sign indicates what follows is something you should enter):
+
+```bash
+$ ls
+```
+
+And you should see the setup.sh file. Now run it:
+
+```bash
+$ ./setup.sh <UNI>
+```
+
+eg. `./setup.sh nm2812`
+
+NOTE: If for some reason you already had an older version of Cygwin installed (like I did), setup.sh may hang. That's because there used to be a bug in prompting the user to enter the GitHub credentials. Just re-run Cygwin's setup.exe to update to the newest version and it should work.
+
+If the script runs correctly, you should see some output. Enter the 'ls' command again, and you should now see a `homework-<youruni>` directory, as well as the setup.sh file. If you see that, the setup ran successfully and you're ready to complete homework 0.
+
+The files that lie in this `homework-<youruni>` directory are ultimately the ones that you will be modifying and submitting. You're free to compile and run your code on any platform you wish. I recommend using Eclipse. Here's how to get the code back and forth from Cygwin and Eclipse:
+
+From Eclipse you'd simply import the `\0` directory (my path to that directory looks like this):
+
+```
+C:\cygwin\home\nick\homework-nm2812\0
+```
+
+For a illustrated guide, see this: [https://github.com/cs3134/admin/blob/master/eclipse.md](https://github.com/cs3134/admin/blob/master/eclipse.md)
+
+Then, from within Eclipse, you should have no problem finding the Jarvis3134.java file and making the required change for homework 0. After that, you have to export the file back to the Cygwin directory.
+
+Then, when you're ready to submit your homework, return to Cygwin. Enter the following command:
+
+```bash
+$ cd homework-nm2812/0
+```
+
+This will take you to the '0' folder in the homework directory. The instructions for HW0 specify how to commit and submit through git from here.
+
+This should (hopefully) be straightforward, but getting Windows to behave like Unix can sometimes be a pain. If anything goes wrong and you can't get it to work, please send me an email: [nm2812@columbia.edu](mailto:nm2812@columbia.edu)
+
+#### Manual Installation
 
 1. Clone the current homework repository by issuing the following commands onto the command line in a directory where you want the homeworks to be:
 
