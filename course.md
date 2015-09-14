@@ -163,7 +163,7 @@ Then, from within Eclipse, you should have no problem finding the Jarvis3134.jav
 Then, when you're ready to submit your homework, return to Cygwin. Enter the following command:
 
 ```bash
-$ cd homework-nm2812/0
+$ cd homework-<youruni>/0
 ```
 
 This will take you to the '0' folder in the homework directory. The instructions for HW0 specify how to commit and submit through git from here.
