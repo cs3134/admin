@@ -8,6 +8,7 @@ Welcome young cadet! This will guide you through setting up for the course. Why 
 
 This is done through Jarvis, GitHub, and (optionally) Scoreboard.
 
+
 ## GitHub
 
 GitHub is a web-based Git repository hosting service that. It makes it easy to
