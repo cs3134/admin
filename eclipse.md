@@ -22,6 +22,6 @@ It's easy to use Eclipse! Just that this time, you won't be creating new project
 
 ![5](https://raw.githubusercontent.com/cs3134/admin/master/eclipse-screenshots/5.png?raw=true)
 
-6. Now you can see your homework (and just that specific homework) as a project in Eclipse.
+6. Now you can see your homeworks as a projects in Eclipse.
 
 ![6](https://raw.githubusercontent.com/cs3134/admin/master/eclipse-screenshots/6.png?raw=true)
