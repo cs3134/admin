@@ -107,7 +107,7 @@ Branch master set up to track remote branch master from origin.
 Everything up-to-date
 ```
 
-If you want to use Eclipse, simply import the entire `0` directory as a project. The guide to using Eclipse is here: [https://github.com/cs3134/admin/blob/master/eclipse.md](https://github.com/cs3134/admin/blob/master/eclipse.md)
+If you want to use Eclipse, simply import the entire `homework-<youruni>` directory as a project. The guide to using Eclipse is here: [https://github.com/cs3134/admin/blob/master/eclipse.md](https://github.com/cs3134/admin/blob/master/eclipse.md)
 
 #### Linux
 
@@ -153,10 +153,10 @@ If the script runs correctly, you should see some output. Enter the 'ls' command
 
 The files that lie in this `homework-<youruni>` directory are ultimately the ones that you will be modifying and submitting. You're free to compile and run your code on any platform you wish. I recommend using Eclipse. Here's how to get the code back and forth from Cygwin and Eclipse:
 
-From Eclipse you'd simply import the `\0` directory (my path to that directory looks like this):
+From Eclipse you'd simply import the `homework-<youruni>` directory (my path to that directory looks like this):
 
 ```
-C:\cygwin\home\nick\homework-nm2812\0
+C:\cygwin\home\nick\homework-nm2812
 ```
 
 For a illustrated guide, see this: [https://github.com/cs3134/admin/blob/master/eclipse.md](https://github.com/cs3134/admin/blob/master/eclipse.md)
