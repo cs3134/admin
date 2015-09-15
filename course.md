@@ -150,6 +150,12 @@ Run setup.sh:
 ```
 eg. `./setup.sh nm2812`
 
+Note: some students have difficulty running the script in this way. If it doesn't work, try this:
+
+```bash
+sh setup.sh <youruni>
+```
+
 If the script runs correctly, you should see some output. Enter the 'ls' command again, and you should now see a `homework-<youruni>` directory, as well as the setup.sh file. If you see that, the setup ran successfully and you're ready to complete homework 0.
 
 The files that lie in this `homework-<youruni>` directory are ultimately the ones that you will be modifying and submitting. You're free to compile and run your code on any platform you wish. I recommend using Eclipse. Here's how to get Eclipse to modify the files in this directory:
