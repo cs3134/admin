@@ -121,55 +121,50 @@ If you use Eclipse, this guide will be useful for importing projects: [https://g
 
 (Contributed by [Windows Guru Nick Mariconda nm2812@columbia.edu](mailto:nm2812@columbia.edu))
 
-In order to run setup.sh on a Windows machine, you need to install Cygwin. Cygwin (pronounced sig-win) is a Unix-like environment and command-line interface for Windows. It's a good idea for Windows users to be familiar with Cygwin.
+Setting things up on Windows is not quite as straightforward, but fortunately there are plenty of tools available to help you out. 
 
-First, install Cygwin from the Cygwin homepage: https://cygwin.com/install.html
+The simplest way to do it is by installing Git Desktop. Git Desktop provides a Git Shell on which you can run setup.sh (it's basically powershell + git, for those of you familiar with powershell). 
 
-When running setup.exe, make sure to check off all the git packages at the appropriate step of the installation, as shown below:
+Download it from the following link: https://desktop.github.com/
 
-![1](https://raw.githubusercontent.com/cs3134/admin/master/course-screenshots/git-cygwin.png?raw=true)
+Once you've downloaded it, you should see Git Desktop and Git Shell icons on your desktop. Open the Git Shell icon and it should open a command-line interface in a directory that looks like this:
 
-The default options of the installation are fine; the installation itself can take a pretty long time (mine took a few hours). It's totally worth it -- the installation repays itself many times over.
+	C:\Users\nick\Documents\GitHub
+	
+(you can also access the Git Shell from the Git Desktop Gui that should come up right after installation -- click the gear on the top right corner, and then click 'Open in Git Shell')
+	
+You want to copy and paste the setup.sh script to that directory. Here's how you do that:
 
-Once it's installed, open it up and you should be at a command prompt. Now you just need to run the setup.sh script and you're good to go:
-
-You need to download the Admin zip from GitHub [https://github.com/cs3134/admin](https://github.com/cs3134/admin):
+First, you need to download the Admin zip from GitHub: https://github.com/cs3134/admin
 
 That link points to the cs3134/admin repo on GitHub. To download it, click the link on the bottom right of the screen 'Download ZIP'.
 
-A File Explorer window should pop up with an 'admin-master' folder. Enter the folder and you should find the 'setup' shell script. Copy it, and then paste it in the home/USERNAME directory of Cygwin. You should be able to find this directory in the Cygwin folder located in the C drive directory. My full directory path for it looks like this: C:\cygwin\home\nick
+A File Explorer window should pop up with an 'admin-master' folder. Enter the folder and you should find the 'setup' shell script. Copy it, and now you can paste it right into the directory specified earlier.
 
-Once it's pasted in that directory, open up Cygwin. Enter (without the `$` sign. The `$` sign indicates what follows is something you should enter):
+Now go back to your Git Shell command prompt and enter the command 'ls'. You should see setup.sh in there. If you don't, something went wrong. Recheck your steps, and ask for help on Piazza if you can't figure it out.
 
-```bash
-$ ls
-```
-
-And you should see the setup.sh file. Now run it:
+Run setup.sh:
 
 ```bash
-$ ./setup.sh <UNI>
+./setup.sh <UNI>
 ```
-
 eg. `./setup.sh nm2812`
-
-NOTE: If for some reason you already had an older version of Cygwin installed (like I did), setup.sh may hang. That's because there used to be a bug in prompting the user to enter the GitHub credentials. Just re-run Cygwin's setup.exe to update to the newest version and it should work.
 
 If the script runs correctly, you should see some output. Enter the 'ls' command again, and you should now see a `homework-<youruni>` directory, as well as the setup.sh file. If you see that, the setup ran successfully and you're ready to complete homework 0.
 
-The files that lie in this `homework-<youruni>` directory are ultimately the ones that you will be modifying and submitting. You're free to compile and run your code on any platform you wish. I recommend using Eclipse. Here's how to get the code back and forth from Cygwin and Eclipse:
+The files that lie in this `homework-<youruni>` directory are ultimately the ones that you will be modifying and submitting. You're free to compile and run your code on any platform you wish. I recommend using Eclipse. Here's how to get Eclipse to modify the files in this directory:
 
-From Eclipse you'd simply import the `homework-<youruni>` directory (my path to that directory looks like this):
+Open up Eclipse and create a new Java Project. Uncheck the box marked "Use default location". Instead of using that, we're going to have the project point directly to homework 0 directory created after running the setup.sh script. In the 'location' field, enter the directory path to HW0. Mine looks like this:
 
-```
-C:\cygwin\home\nick\homework-nm2812
-```
+C:\Users\nick\Documents\GitHub\homework-nm2812\0
 
-For a illustrated guide, see this: [https://github.com/cs3134/admin/blob/master/eclipse.md](https://github.com/cs3134/admin/blob/master/eclipse.md)
+(you should note this is straight from the directory created after running the setup.sh script)
 
-Then, from within Eclipse, you should have no problem finding the Jarvis3134.java file and making the required change for homework 0. After that, you have to export the file back to the Cygwin directory.
+Make sure to give the project a sensible name (the name defaults to '0', which is actually illegal).
 
-Then, when you're ready to submit your homework, return to Cygwin. Enter the following command:
+Once the project is created from within Eclipse, you should have no problem finding the Jarvis3134.java file and making the required change for homework 0. 
+
+When you're ready to submit your homework, return to the git shell and enter the following command:
 
 ```bash
 $ cd homework-<youruni>/0
@@ -177,7 +172,13 @@ $ cd homework-<youruni>/0
 
 This will take you to the '0' folder in the homework directory. The instructions for HW0 specify how to commit and submit through git from here.
 
-This should (hopefully) be straightforward, but getting Windows to behave like Unix can sometimes be a pain. If anything goes wrong and you can't get it to work, please send me an email: [nm2812@columbia.edu](mailto:nm2812@columbia.edu)
+This should (hopefully) be straightforward, but getting Windows to behave like Unix can sometimes be a pain. If anything goes wrong and you can't get it to work, make a post on Piazza and the TA team will assist you!
+
+
+Note: For those of you wondering, Git Shell isn't the only way a Windows user can dabble in a Unix-like environment. All these steps could be completed with Cygwin (pronounced sig-win), which is a powerful Unix-like environment and command-line interface for Windows. It's a great idea for Windows users to get familiar with it. The setup may be a bit more complicated, but you should give it a try if you have some free time -- Cygwin is a powerful tool with applications that extend far beyond merely using Git. 
+
+You can install it from here: https://cygwin.com/install.html
+
 
 #### Manual Installation
 
