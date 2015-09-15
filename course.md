@@ -127,7 +127,7 @@ The simplest way to do it is by installing Git Desktop. Git Desktop provides a G
 
 Download it from the following link: https://desktop.github.com/
 
-Once you've downloaded it, you should see Git Desktop and Git Shell icons on your desktop. Open the Git Shell icon and it should open a command-line interface in a directory that looks like this:
+Once you've downloaded it, you should see Git Desktop and Git Shell icons on your desktop. Open the Git Shell icon and it should open a command-line interface in a directory that looks similar to this:
 
 	C:\Users\nick\Documents\GitHub
 	
