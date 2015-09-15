@@ -47,6 +47,8 @@ You should now be apart of the CS3134 Organization and should have access to a f
 
 You should have also received an email with your nickname. If for any reason you don't receive the confirmation email, email the Head TA [Linan Qiu lq2137@columbia.edu](mailto:lq2137@columbia.edu).
 
+**Finally, check your email and accept an invitation to join the cs3134 team on GitHub. This is critical. You need to do this to have the right permissions to access homeworks.**
+
 ### Install Git
 
 Install Git by following the instructions here for your operating system: [https://help.github.com/articles/set-up-git/](https://help.github.com/articles/set-up-git/).
