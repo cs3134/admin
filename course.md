@@ -173,7 +173,7 @@ Once the project is created from within Eclipse, you should have no problem find
 When you're ready to submit your homework, return to the git shell and enter the following command:
 
 ```bash
-$ cd homework-<youruni>/0
+cd homework-<youruni>/0
 ```
 
 This will take you to the '0' folder in the homework directory. The instructions for HW0 specify how to commit and submit through git from here.
