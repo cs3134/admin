@@ -18,6 +18,3 @@ git remote -v
 git remote add origin https://github.com/cs3134/homework-$1
 echo "Final remote -v setup"
 git remote -v
-git add --all
-git commit -m "first commit made from setup.sh"
-git push -u -f origin master
