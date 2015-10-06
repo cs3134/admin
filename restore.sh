@@ -3,7 +3,7 @@
 if [ -z "$1" ]
   then
     echo "Enter your uni as an argument eg."
-    echo "sh setup.sh ab1234"
+    echo "sh restore.sh ab1234"
     exit 1
 fi
 
